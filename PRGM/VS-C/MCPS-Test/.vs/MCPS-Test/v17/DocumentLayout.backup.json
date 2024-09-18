@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\MCPS\\PRGM\\VS-C\\MCPS-Test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{71535779-B42D-4DB3-AFB2-9C9697658296}|Embedded\\EmbeddedF3\\EmbeddedF3.vcxproj|D:\\Projects\\MCPS\\PRGM\\VS-C\\MCPS-Test\\Embedded\\EmbeddedF3\\Core\\Src\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{71535779-B42D-4DB3-AFB2-9C9697658296}|Embedded\\EmbeddedF3\\EmbeddedF3.vcxproj|solutionrelative:Embedded\\EmbeddedF3\\Core\\Src\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71535779-B42D-4DB3-AFB2-9C9697658296}|Embedded\\EmbeddedF3\\EmbeddedF3.vcxproj|D:\\Projects\\MCPS\\PRGM\\VS-C\\MCPS-Test\\Embedded\\EmbeddedF3\\Core\\Src\\stm32f3xx_it.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{71535779-B42D-4DB3-AFB2-9C9697658296}|Embedded\\EmbeddedF3\\EmbeddedF3.vcxproj|solutionrelative:Embedded\\EmbeddedF3\\Core\\Src\\stm32f3xx_it.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71535779-B42D-4DB3-AFB2-9C9697658296}|Embedded\\EmbeddedF3\\EmbeddedF3.vcxproj|D:\\Projects\\MCPS\\PRGM\\VS-C\\MCPS-Test\\Embedded\\EmbeddedF3\\Core\\Src\\stm32f3xx_hal_msp.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{71535779-B42D-4DB3-AFB2-9C9697658296}|Embedded\\EmbeddedF3\\EmbeddedF3.vcxproj|solutionrelative:Embedded\\EmbeddedF3\\Core\\Src\\stm32f3xx_hal_msp.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "stm32f3xx_it.c",
+              "DocumentMoniker": "D:\\Projects\\MCPS\\PRGM\\VS-C\\MCPS-Test\\Embedded\\EmbeddedF3\\Core\\Src\\stm32f3xx_it.c",
+              "RelativeDocumentMoniker": "Embedded\\EmbeddedF3\\Core\\Src\\stm32f3xx_it.c",
+              "ToolTip": "D:\\Projects\\MCPS\\PRGM\\VS-C\\MCPS-Test\\Embedded\\EmbeddedF3\\Core\\Src\\stm32f3xx_it.c",
+              "RelativeToolTip": "Embedded\\EmbeddedF3\\Core\\Src\\stm32f3xx_it.c",
+              "ViewState": "AgIAANQAAAAAAAAAAAAnwNcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-09-17T08:42:08.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "stm32f3xx_hal_msp.c",
+              "DocumentMoniker": "D:\\Projects\\MCPS\\PRGM\\VS-C\\MCPS-Test\\Embedded\\EmbeddedF3\\Core\\Src\\stm32f3xx_hal_msp.c",
+              "RelativeDocumentMoniker": "Embedded\\EmbeddedF3\\Core\\Src\\stm32f3xx_hal_msp.c",
+              "ToolTip": "D:\\Projects\\MCPS\\PRGM\\VS-C\\MCPS-Test\\Embedded\\EmbeddedF3\\Core\\Src\\stm32f3xx_hal_msp.c",
+              "RelativeToolTip": "Embedded\\EmbeddedF3\\Core\\Src\\stm32f3xx_hal_msp.c",
+              "ViewState": "AgIAABwAAAAAAAAAAAAhwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-09-17T08:38:18.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.c",
+              "DocumentMoniker": "D:\\Projects\\MCPS\\PRGM\\VS-C\\MCPS-Test\\Embedded\\EmbeddedF3\\Core\\Src\\main.c",
+              "RelativeDocumentMoniker": "Embedded\\EmbeddedF3\\Core\\Src\\main.c",
+              "ToolTip": "D:\\Projects\\MCPS\\PRGM\\VS-C\\MCPS-Test\\Embedded\\EmbeddedF3\\Core\\Src\\main.c*",
+              "RelativeToolTip": "Embedded\\EmbeddedF3\\Core\\Src\\main.c*",
+              "ViewState": "AgIAAAYFAAAAAAAAAAASwBUFAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-09-17T08:34:45.925Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

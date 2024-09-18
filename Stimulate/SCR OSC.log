@@ -1,0 +1,22 @@
+Circuit: * C:\Users\Kosar\Downloads\project\SCR OSC.asc
+
+.OP point found by inspection.
+
+Date: Tue Sep 10 11:14:20 2024
+Total elapsed time: 0.134 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 4363
+traniter = 4363
+tranpoints = 2070
+accept = 1597
+rejected = 473
+matrix size = 65
+fillins = 38
+solver = Normal
+Avg thread counts: 1.1/1.3/1.3/1.1
+Matrix Compiler1: 4.07 KB object code size  1.5/1.0/[0.3]
+Matrix Compiler2: 5.00 KB object code size  0.6/3.3/[0.5]
+

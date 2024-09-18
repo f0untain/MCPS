@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{71535779-B42D-4DB3-AFB2-9C9697658296}</ProjectGuid>
+    <BSP_ID>com.sysprogs.arm.stm32</BSP_ID>
+    <BSP_VERSION>2024.07</BSP_VERSION>
+    <InPlaceBSPSubdir />
+    <RelativeBSPPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>13.3.1/15.1/r3</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>13.3.1/15.1/r3</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <CPPLanguageStandard>
+      </CPPLanguageStandard>
+      <AdditionalIncludeDirectories>ClockConfig;../Button;../Eeprom;Core/Inc;../Lcd;../Menu;../Pwm;../HalWrite;Core\Inc;Drivers\STM32F3xx_HAL_Driver\Inc;Drivers\STM32F3xx_HAL_Driver\Inc\Legacy;Drivers\CMSIS\Device\ST\STM32F3xx\Include;Drivers\CMSIS\Include;../DisplayUi;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;USE_HAL_DRIVER;STM32F334x8;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LinkerScript>D:\Projects\VS\MCPS\Embedded\EmbeddedF3\STM32F334R8TX_FLASH.ld</LinkerScript>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <CPPLanguageStandard>
+      </CPPLanguageStandard>
+      <AdditionalIncludeDirectories>Core\Inc;Drivers\STM32F3xx_HAL_Driver\Inc;Drivers\STM32F3xx_HAL_Driver\Inc\Legacy;Drivers\CMSIS\Device\ST\STM32F3xx\Include;Drivers\CMSIS\Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG=1;RELEASE=1;USE_HAL_DRIVER;STM32F334x8;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LinkerScript>D:\Projects\VS\MCPS\Embedded\EmbeddedF3\STM32F334R8TX_FLASH.ld</LinkerScript>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Inc\main.h" />
+    <ClInclude Include="Core\Inc\stm32f3xx_hal_conf.h" />
+    <ClInclude Include="Core\Inc\stm32f3xx_it.h" />
+    <ClCompile Include="Core\Src\main.cpp" />
+    <ClCompile Include="Core\Src\stm32f3xx_hal_msp.c" />
+    <ClCompile Include="Core\Src\stm32f3xx_it.c" />
+    <ClCompile Include="Core\Src\syscalls.c" />
+    <ClCompile Include="Core\Src\sysmem.c" />
+    <ClCompile Include="Core\Src\system_stm32f3xx.c" />
+    <None Include="Drivers\CMSIS\LICENSE.txt" />
+    <None Include="Drivers\CMSIS\Device\ST\STM32F3xx\LICENSE.txt" />
+    <ClInclude Include="Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f334x8.h" />
+    <ClInclude Include="Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h" />
+    <ClInclude Include="Drivers\CMSIS\Device\ST\STM32F3xx\Include\system_stm32f3xx.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\cmsis_armcc.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\cmsis_armclang.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\cmsis_compiler.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\cmsis_gcc.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\cmsis_iccarm.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\cmsis_version.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\core_armv8mbl.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\core_armv8mml.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\core_cm0.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\core_cm0plus.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\core_cm1.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\core_cm23.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\core_cm3.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\core_cm33.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\core_cm4.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\core_cm7.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\core_sc000.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\core_sc300.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\mpu_armv7.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\mpu_armv8.h" />
+    <ClInclude Include="Drivers\CMSIS\Include\tz_context.h" />
+    <None Include="Drivers\STM32F3xx_HAL_Driver\LICENSE.txt" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_cortex.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_def.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dma.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_dma_ex.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_exti.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_flash.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_flash_ex.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_gpio.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_gpio_ex.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2c.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_i2c_ex.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pwr.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_pwr_ex.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rcc.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_rcc_ex.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_tim.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal_tim_ex.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_bus.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_cortex.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_dma.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_exti.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_gpio.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_i2c.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_pwr.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_rcc.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_system.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_tim.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_utils.h" />
+    <ClInclude Include="Drivers\STM32F3xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
+    <ClCompile Include="Core\Startup\startup_stm32f334r8tx.S" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.c" />
+    <ClCompile Include="Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.c" />
+    <ClCompile Include="ClockConfig\clockconfig.cpp" />
+    <ClInclude Include="ClockConfig\clockconfig.h" />
+    <None Include="stm32.props" />
+    <ClCompile Include="..\Lcd\lcd.cpp" />
+    <ClInclude Include="..\Lcd\lcd.h" />
+    <ClCompile Include="..\HalWrite\hal.cpp" />
+    <ClInclude Include="..\HalWrite\hal.h" />
+    <ClCompile Include="..\Button\button.cpp" />
+    <ClInclude Include="..\Button\button.h" />
+    <ClCompile Include="..\Eeprom\eeprom.cpp" />
+    <ClInclude Include="..\Eeprom\eeprom.h" />
+    <ClCompile Include="..\Menu\Menu.cpp" />
+    <ClInclude Include="..\Menu\Menu.h" />
+    <ClCompile Include="..\Pwm\pwm.cpp" />
+    <ClInclude Include="..\Pwm\pwm.h" />
+  </ItemGroup>
+</Project>

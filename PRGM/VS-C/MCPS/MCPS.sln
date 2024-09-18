@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EmbeddedF3", "Embedded\EmbeddedF3\EmbeddedF3.vcxproj", "{71535779-B42D-4DB3-AFB2-9C9697658296}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71535779-B42D-4DB3-AFB2-9C9697658296}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{71535779-B42D-4DB3-AFB2-9C9697658296}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{71535779-B42D-4DB3-AFB2-9C9697658296}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{71535779-B42D-4DB3-AFB2-9C9697658296}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CFA4F3B-802F-4D60-A85F-6657D938F11B}
+	EndGlobalSection
+EndGlobal

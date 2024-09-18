@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.visualgdb/CodeExplorer
+/.vs/MCPS
+/Embedded/.vs
+/Embedded/EmbeddedF3/.visualgdb
+/Embedded/EmbeddedF3/VisualGDB/Debug
+/VisualGDB/Debug
